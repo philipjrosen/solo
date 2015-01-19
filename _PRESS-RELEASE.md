@@ -1,4 +1,4 @@
-# Project Name #
+# cyk-js #
 
 <!-- 
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
@@ -16,20 +16,19 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
  -->
  
-## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+## CYK-JS ##
 
-## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+## Audience ##
+ Computational Linguists and Software Engineers who want to generate parse-trees for English sentences 
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+The Cocke–Younger–Kasami (CYK) algorithm is a parsing algorithm for context-free grammars (CFGs). It employs bottom-up parsing and dynamic programming. This module implments the standard version of CYK  which operates only on context-free grammars given in Chomsky normal form (CNF). The importance of the CYK algorithm stems from its high efficiency in certain situations. 
 
 ## Problem ##
-  > Describe the problem your product solves.
+Currently there is no JavaScript library that implements this algorithm. This is painful for developers who would like to build parse-trees for use in other types of linguistic analysis or in order to use them as inputs to front-end data visualization libraries such as d3.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+Implementing the algorithm from the gorund up using JavaScript and making use of the advantageous features of JS for this purpose will make the implementation accessible to developer who work primarily in JS as well as create easy access to those who wish to make open source contributions to this module.
 
 ## Quote from You ##
   > A quote from a spokesperson in your company.
