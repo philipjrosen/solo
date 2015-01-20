@@ -19,6 +19,12 @@ var makeParent = function(name) {
   return parent
 };
 
+var tagWords = function(sentence) {
+  var words = new pos.Lexer().lex(sentence);
+  var taggedWords = new pos.Tagger().tag(words);
+  return taggedWords;
+};
 
-exports.makeParent = makeParent;
 exports.cnfGrammar = cnfGrammar;
+exports.makeParent = makeParent;
+exports.tagWords = tagWords;
