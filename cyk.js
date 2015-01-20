@@ -1,4 +1,5 @@
 var pos = require('pos');
+var _ = require('./node_modules/underscore/underscore-min.js');
 
 var cnfGrammar = {
 
@@ -25,6 +26,19 @@ var tagWords = function(sentence) {
   return taggedWords;
 };
 
+var makePosArray = function(taggedWordList) {
+  return _.map(taggedWordList, function(tuple) {
+    return tuple[1];
+  });
+};
+
+var parseSentence = function(sentence, grammar) {
+
+
+};
+
 exports.cnfGrammar = cnfGrammar;
 exports.makeParent = makeParent;
 exports.tagWords = tagWords;
+exports.parseSentence = parseSentence;
+exports.makePosArray = makePosArray;
