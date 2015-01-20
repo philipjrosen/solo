@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "dependencies": {
     "chai": "~1.8.0",
-    "pos": "^0.1.7-2"
+    "pos": "^0.1.7-2",
+    "underscore": "^1.7.0"
   },
   "scripts": {
     "test": "mocha ./spec/cyk.js"
